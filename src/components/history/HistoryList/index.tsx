@@ -1,9 +1,13 @@
+import type { HistoryItem } from '@/types/history.ts';
 import { HistoryListItem } from './HistoryListItem';
-import { useHistory } from '@/hooks/useHistory';
 
-export function HistoryList() {
-  const { items, deleteItem, selectItem } = useHistory();
-  
+export interface HistoryListProps {
+  items: HistoryItem[];
+  selectItem: (id: string) => void;
+  deleteItem: (id: string) => void;
+}
+
+export function HistoryList({ items, deleteItem, selectItem }: HistoryListProps) {
   return (
     <div className="space-y-4" role="list">
       {items.map((item) => (

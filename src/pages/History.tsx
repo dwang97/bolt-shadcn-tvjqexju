@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 import { cn } from '@/lib/utils';
 
 export function History() {
-  const { selectedItem, clearSelection } = useHistory();
+  const { items, deleteItem, selectItem, selectedItem, clearSelection } = useHistory();
   const [isTransitioning, setIsTransitioning] = useState(false);
 
   useEffect(() => {
@@ -20,10 +20,10 @@ export function History() {
 
   return (
     <div className="min-h-screen bg-amber-50 text-amber-900">
-      <main 
+      <main
         className={cn(
-          "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12",
-          "transition-all duration-300 ease-in-out",
+          'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12',
+          'transition-all duration-300 ease-in-out',
           isTransitioning ? 'opacity-0 transform translate-y-4' : 'opacity-100 transform translate-y-0'
         )}
       >
@@ -42,8 +42,8 @@ export function History() {
           />
         ) : (
           <>
-            <PageHeader title="History" />
-            <HistoryList />
+            <PageHeader title="History"/>
+            <HistoryList items={items} deleteItem={deleteItem} selectItem={selectItem}/>
           </>
         )}
       </main>
