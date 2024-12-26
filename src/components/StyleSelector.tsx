@@ -1,8 +1,8 @@
 import { cn } from '@/lib/utils';
-import { Button } from './ui/Button';
-import { Toggle } from './ui/Toggle';
+import { Button } from './ui/button';
+import { Toggle } from './ui/toggle';
 
-const STYLES = ['Standard', 'Academic', 'Simple', 'Flowing', 'Formal', 'Informal'] as const;
+const STYLES = ['Free', 'Academic', 'Standard', 'Simple', 'Smooth', 'Formal', 'Expand', 'Shorten'] as const;
 
 interface StyleSelectorProps {
   selectedStyle: string;
@@ -42,9 +42,9 @@ export function StyleSelector({
         </div>
         <div className="px-4">
           <Toggle
-            enabled={isUltraEnabled}
-            onToggle={onUltraToggle}
-            label="Ultra run"
+            pressed={isUltraEnabled}
+            onPressedChange={onUltraToggle}
+            aria-label="Power mode"
           />
         </div>
       </div>

@@ -9,11 +9,11 @@ export function HelpAndSupport() {
         <div>
           <h3 className="font-serif text-amber-800 mb-4">Support center</h3>
           <a
-            href="mailto:support@humanizeai.pro"
+            href="mailto:support@humanizeai.plus"
             className="inline-flex items-center text-amber-700 hover:text-amber-800"
           >
             <Mail className="w-4 h-4 mr-2" />
-            support@humanizeai.pro
+            support@humanizeai.plus
           </a>
           <div className="text-sm text-amber-600 mt-1">
             Response in 1-2 business days
@@ -23,7 +23,8 @@ export function HelpAndSupport() {
         <div className="flex items-start space-x-2 text-amber-600 bg-amber-50/50 p-4 rounded-lg">
           <Info className="w-5 h-5 text-amber-700 mt-0.5" />
           <p className="text-sm">
-            If you were charged words but could not properly use them don't hesitate to contact us, and we can refund them.
+            If you were charged words but could not use them properly, please contact us. 
+            We can refund them back as word credits.
           </p>
         </div>
 

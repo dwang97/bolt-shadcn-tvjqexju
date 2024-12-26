@@ -3,7 +3,7 @@ export function FooterCopyright() {
   
   return (
     <div className="text-gray-500 text-sm">
-      © {currentYear} humanizeai.pro. All rights reserved.
+      © {currentYear} humanizeai.plus. All rights reserved.
     </div>
   );
 }

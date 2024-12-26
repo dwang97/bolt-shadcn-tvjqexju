@@ -1,4 +1,4 @@
-import { Button } from '@/components/ui/Button';
+import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
 import { Sparkles } from 'lucide-react';
 
@@ -26,7 +26,7 @@ export function BillingInfo() {
               Upgrade your Plan for more words
             </h3>
             <p className="text-sm text-amber-600 mt-1">
-              Get unlimited words and premium features
+              Get substantial text increase with premium features
             </p>
           </div>
           <Button className="bg-gradient-to-r from-amber-500 to-amber-600 text-white hover:from-amber-600 hover:to-amber-700">

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Button } from '@/components/ui/Button';
+import { Button } from '@/components/ui/button';
 import { Switch } from '@/components/ui/switch';
 import { cn } from '@/lib/utils';
 import { Check } from 'lucide-react';
@@ -7,10 +7,10 @@ import { Check } from 'lucide-react';
 const PLANS = [
   {
     name: 'Lite',
-    monthlyPrice: 19,
-    yearlyPrice: 190,
+    monthlyPrice: 18,
+    yearlyPrice: 9,
     words: 20000,
-    wordsPerProcess: 500,
+    wordsPerProcess: 600,
     features: [
       'ALL modes and settings',
       'Continuous improvements',
@@ -20,9 +20,9 @@ const PLANS = [
     ],
   },
   {
-    name: 'Standard',
-    monthlyPrice: 29,
-    yearlyPrice: 290,
+    name: 'Essential',
+    monthlyPrice: 28,
+    yearlyPrice: 14,
     words: 50000,
     wordsPerProcess: 'Unlimited',
     features: [
@@ -36,10 +36,10 @@ const PLANS = [
     popular: true,
   },
   {
-    name: 'Pro',
-    monthlyPrice: 79,
-    yearlyPrice: 790,
-    words: 150000,
+    name: 'Elite+',
+    monthlyPrice: 78,
+    yearlyPrice: 39,
+    words: 160000,
     wordsPerProcess: 'Unlimited',
     features: [
       'ALL modes and settings',

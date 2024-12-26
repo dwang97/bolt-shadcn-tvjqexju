@@ -8,10 +8,10 @@ export function Pricing() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center mb-16">
           <h1 className="text-4xl font-serif mb-4">
-            Get the most undetectable AI paraphrasing tool
+            Get the most undetectable AI humanizer tool
           </h1>
           <p className="text-lg text-amber-700">
-            Money back guarantee. If anything we produce is flagged as not human, we will refund the cost of humanization.
+            Money back guarantee. If any result we produce is flagged as non-human, we will refund the words back.
           </p>
         </div>
         <PricingPlans />

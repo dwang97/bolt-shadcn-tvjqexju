@@ -1,9 +1,9 @@
 import { Brain } from 'lucide-react';
-import { Button } from './ui/Button';
+import { Button } from './ui/button';
 
 interface NavigationProps {
   currentPage: string;
-  onPageChange: (page: 'editor' | 'history' | 'account' | 'pricing') => void;
+  onPageChange: (page:  'pricing'|'editor' | 'history' | 'account' ) => void;
 }
 
 export function Navigation({ currentPage, onPageChange }: NavigationProps) {

@@ -1,5 +1,5 @@
 import { formatDistanceToNow } from 'date-fns';
-import { Button } from '@/components/ui/Button';
+import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { Eye, Trash2 } from 'lucide-react';
 import type { HistoryItemProps } from '@/types/history';
