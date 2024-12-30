@@ -5,12 +5,14 @@ import { cva, type VariantProps } from 'class-variance-authority';
 import { cn } from '@/lib/utils';
 
 const buttonVariants = cva(
-  'inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50',
+  'inline-flex items-center justify-center whitespace-nowrap font-serif rounded-md transition-all duration-200 text-base transition-colors border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50',
   {
     variants: {
       variant: {
         default:
-          'bg-primary text-primary-foreground shadow hover:bg-primary/90',
+          'shadow bg-gradient-to-b from-amber-50 to-amber-100/80 border border-amber-200/50 text-amber-800/70 shadow-[inset_0_-1px_1px_rgba(0,0,0,0.1),inset_0_1px_1px_rgba(255,255,255,0.7)] hover:shadow-[inset_0_-2px_2px_rgba(0,0,0,0.1),inset_0_2px_2px_rgba(255,255,255,0.7)] hover:border-amber-300/50 active:shadow-[inset_0_1px_2px_rgba(0,0,0,0.2)] active:translate-y-[0.5px]',
+        primary:
+          'shadow hover:bg-primary/90 shadow-[inset_0_-1px_1px_rgba(0,0,0,0.1),inset_0_1px_1px_rgba(255,255,255,0.7)] hover:shadow-[inset_0_-2px_2px_rgba(0,0,0,0.1),inset_0_2px_2px_rgba(255,255,255,0.7)] hover:border-amber-300/50 active:shadow-[inset_0_1px_2px_rgba(0,0,0,0.2)] active:translate-y-[0.5px] bg-gradient-to-b from-amber-200/80 to-amber-300/50 border-amber-400/30 text-amber-900',
         destructive:
           'bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90',
         outline:

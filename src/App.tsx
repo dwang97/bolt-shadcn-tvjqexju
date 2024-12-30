@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { PageLayout } from './components/layout/PageLayout';
 import { StyleSelector } from './components/StyleSelector';
 import { TextArea } from './components/TextArea';
-import { Button } from './components/ui/button';
+import { Button } from '@radix-ui/themes';
 import { History } from './pages/History';
 import { Account } from './pages/Account';
 import { Pricing } from './pages/Pricing';
@@ -48,7 +48,7 @@ export default function App() {
             </div>
 
             <div className="flex justify-center mt-8">
-              <Button variant="default" onClick={handleHumanize}>
+              <Button variant="solid" onClick={handleHumanize} className="font-serif rounded-md transition-all duration-200 px-8 py-3 bg-amber-700 text-amber-50 hover:bg-amber-600 border border-amber-600 shadow-lg hover:shadow-amber-700/20">
                 Humanize
               </Button>
             </div>
