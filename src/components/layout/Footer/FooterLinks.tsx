@@ -1,25 +1,24 @@
+import { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
 
-interface FooterLink {
-  label: string;
+export interface FooterLink {
+  label: ReactNode;
   href: string;
+  outer?: boolean;
 }
 
-const FOOTER_LINKS: FooterLink[] = [
-  { label: 'Editor', href: '/' },
-  { label: 'Pricing', href: '/pricing' },
-  { label: 'Blogs', href: 'https://blog.accessay.ai' },
-  // { label: 'Terms of Service', href: '#' },
-  // { label: 'Privacy Policy', href: '#' },
-];
+export interface FooterLinksProps {
+  links: FooterLink[]
+}
 
-export function FooterLinks() {
+export function FooterLinks({ links }: FooterLinksProps) {
   return (
     <div className="flex gap-6">
-      {FOOTER_LINKS.map((link) => (
+      {links.map((link) => (
         <Link
-          key={link.label}
+          key={link.href}
           to={link.href}
+          target={link.outer ? '_blank' : '_self'}
           className="text-gray-400 hover:text-gray-300 transition-colors"
         >
           {link.label}
