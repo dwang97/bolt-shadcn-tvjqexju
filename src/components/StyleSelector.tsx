@@ -1,6 +1,6 @@
+import { Switch } from '@radix-ui/themes';
 import { cn } from '@/lib/utils';
 import { Button } from './ui/button';
-import { Toggle } from './ui/toggle';
 
 const STYLES = ['Free', 'Academic', 'Standard', 'Simple', 'Smooth', 'Formal', 'Expand', 'Shorten'] as const;
 
@@ -40,12 +40,9 @@ export function StyleSelector({
           ))}
           <Button className="text-sm">More</Button>
         </div>
-        <div className="px-4">
-          <Toggle
-            pressed={isUltraEnabled}
-            onPressedChange={onUltraToggle}
-            aria-label="Power mode"
-          />
+        <div className="px-4 flex items-center">
+          <span className="font-medium text-amber-800/70 me-2">Ultra run</span>
+          <Switch defaultChecked checked={isUltraEnabled} onCheckedChange={onUltraToggle} aria-label="Ultra run"/>
         </div>
       </div>
     </div>
