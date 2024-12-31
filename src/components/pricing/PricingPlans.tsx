@@ -15,7 +15,7 @@ const PLANS = [
       'ALL modes and settings',
       'Continuous improvements',
       'Undetectable by all AIs',
-      'No weird or random words',
+      // 'No weird or random words',
       'customer support',
     ],
   },
@@ -30,7 +30,7 @@ const PLANS = [
       'Re-paraphrasing is free',
       'Continuous improvements',
       'Undetectable by all AIs',
-      'No weird or random words',
+      // 'No weird or random words',
       'customer support',
     ],
     popular: true,
@@ -46,7 +46,7 @@ const PLANS = [
       'Re-paraphrasing is free',
       'Continuous improvements',
       'Undetectable by all AIs',
-      'No weird or random words',
+      // 'No weird or random words',
       'customer support',
     ],
   },
@@ -96,7 +96,7 @@ export function PricingPlans() {
             )}
 
             <h3 className="text-xl font-serif mb-4">{plan.name}</h3>
-            
+
             <div className="mb-6">
               <div className="flex items-baseline">
                 <span className="text-4xl font-bold">
@@ -111,7 +111,7 @@ export function PricingPlans() {
                 <span className="text-xl font-semibold">{plan.words.toLocaleString()}</span>
                 <span className="text-amber-600">words / mo.</span>
               </div>
-              
+
               <div className="flex items-baseline gap-2">
                 <span className="font-semibold">{plan.wordsPerProcess}</span>
                 <span className="text-amber-600">words per process</span>
@@ -160,10 +160,10 @@ export function PricingPlans() {
             <Check className="w-4 h-4 text-amber-600" />
             No weird or random words
           </div>
-          <div className="flex items-center gap-2">
-            <Check className="w-4 h-4 text-amber-600" />
-            customer support
-          </div>
+          {/*<div className="flex items-center gap-2">*/}
+          {/*  <Check className="w-4 h-4 text-amber-600" />*/}
+          {/*  customer support*/}
+          {/*</div>*/}
         </div>
       </div>
     </div>

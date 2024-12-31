@@ -18,6 +18,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-focus-ring-color: #fde68a80;
 }
 
 body {
@@ -114,4 +115,8 @@ h1 {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+textarea:focus-visible {
+  outline: none;
 }
